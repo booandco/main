@@ -11,8 +11,8 @@
 <body>
   <header class="fixed-header">
     <nav>
-      <ul>
-        <li><a href="#home"><img src="./Namecard%20Design-front.jpg" class="logo"></a></li>
+      <ul style="display: flex; align-items: center; justify-content: center;">
+        <li style="margin-right: auto;"><a href="#home"><img src="./Namecard Design-front.jpg" class="logo"></a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#about">About</a></li>
@@ -22,6 +22,7 @@
       </ul>
     </nav>
   </header>
+
 
   <main>
     <section class="hero" id="home">
@@ -33,18 +34,28 @@
     </section>
 
     <section class="projects" id="projects">
-      <h2>Our Projects</h2>
-      <div class="projects-item">
-        <img src="project1.jpg" alt="Project 1">
-        <h3>Residential Design</h3>
-        <p>We specialize in creating unique and personalized interior designs for homes.</p>
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <div class="project-item">
+          <div class="image-container">
+            <img src="./Tampines.png" alt="Project 1">
+          </div>
+          <div class="project-content">
+            <h3>Tampines 4-Room BTO</h3>
+            <p>Description of Project 1</p>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="image-container">
+            <img src="./Boat Quay.png" alt="Project 2">
+          </div>
+          <div class="project-content">
+            <h3>Boat Quay Shophouse</h3>
+            <p>Description of Project 2</p>
+          </div>
+        </div>
       </div>
-      <div class="projects-item">
-        <img src="project2.jpg" alt="Project 2">
-        <h3>Commercial Design</h3>
-        <p>We offer innovative design solutions for businesses and office spaces.</p>
-      </div>
-    </section>
+    </section>    
 
     <section class="portfolio" id="portfolio">
       <h2>Our Portfolio</h2>
@@ -69,8 +80,8 @@
 
     <section class="contact" id="contact">
       <h2>Contact Us</h2>
-      <p>Have a project in mind? Get in touch with our team to discuss your requirements.</p>
-      <a href="mailto:booandco.design@gmail.com" class="btn">Email Us</a>
+      <p>Have a project in mind? Get in touch with our team to discuss your requirements at</p>
+      <a href="mailto:booandco.design@gmail.com" class="btn">booandco.design@gmail.com</a>
     </section>
   </main>
 
