@@ -7,14 +7,22 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-</head>
+<script>
+  function showText(img) {
+    img.nextElementSibling.style.opacity = '1';
+  }
+
+  function hideText(img) {
+    img.nextElementSibling.style.opacity = '0';
+  }
+</script>
+
 <body>
   <header class="fixed-header">
     <nav>
       <ul style="display: flex; align-items: center; justify-content: center;">
         <li style="margin-right: auto;"><a href="#home"><img src="./Namecard Design-front.jpg" class="logo"></a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="https://www.instagram.com/booandco.design/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a></li>
@@ -28,7 +36,7 @@
     <section class="hero" id="home">
       <div class="container">
         <h1>Welcome to Boo & Co.</h1>
-        <p>Architecture | Interior | Consultant</p>
+        <p>Architecture | Interior | Consulting</p>
       </div>
       
     </section>
@@ -38,46 +46,53 @@
       <div class="projects-container">
         <div class="project-item">
           <div class="image-container">
-            <img src="./Tampines.png" alt="Project 1">
-          </div>
-          <div class="project-content">
-            <h3>Tampines 4-Room BTO</h3>
-            <p>Description of Project 1</p>
+            <img src="./Tampines.png" alt="Project 1" onmouseover="showText(this)" onmouseout="hideText(this)">
+            <div class="overlay">
+              <h3>Tampines 4-Room BTO</h3>
+              <p>Description of Project 1</p>
+            </div>
           </div>
         </div>
         <div class="project-item">
           <div class="image-container">
-            <img src="./Boat Quay.png" alt="Project 2">
-          </div>
-          <div class="project-content">
-            <h3>Boat Quay Shophouse</h3>
-            <p>Description of Project 2</p>
+            <img src="./Boat Quay.png" alt="Project 2" onmouseover="showText(this)" onmouseout="hideText(this)">
+            <div class="overlay">
+              <h3>Boat Quay Shophouse</h3>
+              <p>Description of Project 2</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>    
-
-    <section class="portfolio" id="portfolio">
-      <h2>Our Portfolio</h2>
-      <div class="portfolio-item">
-        <img src="project1.jpg" alt="Project 1">
-      </div>
-      <div class="portfolio-item">
-        <img src="project2.jpg" alt="Project 2">
-      </div>
-      <div class="portfolio-item">
-        <img src="project3.jpg" alt="Project 3">
       </div>
     </section>
 
     <section class="about" id="about">
       <h2>About Us</h2>
-      <p>Boo & Co. is built upon a foundation of love. Not just of the final outcome or design, but also love for process of 
-        the way things are created.</p>
-      <a href="https://www.linkedin.com/in/tracy-tai-work/" class="btn">Learn More about Tracy</a>
-      <a href="https://www.linkedin.com/in/wong-yi-jie-447b0a22a/" class="btn">Learn More about Yi Jie</a>
+      <p>Boo & Co. is built upon a foundation of love. Not just of the final outcome or design, but also love for the process of how things are created.</p>
+      <div class="image-container-a">
+        <div class="image-row">
+          <a href="https://www.linkedin.com/in/tracy-tai-work" class="circle-button">
+            <img src="./Tracy Boo.jpg" alt="Learn More about Tracy" class="circle-button">
+          </a>
+          <div class="justified-text-container">
+            <p class="justified-text">Tracy (Boo) is all things design and aesthetic in this partnership. From concepts
+              to design advice to design theory, she's the person to look for.
+            </p>
+          </div>
+        </div>
+        <div class="image-row">
+          <a href="https://www.linkedin.com/in/wong-yi-jie-447b0a22a" class="circle-button">
+            <img src="./YJ.jpg" alt="Learn More about Yi Jie" class="circle-button">
+          </a>
+          <div class="justified-text-container">
+            <p class="justified-text">Yi Jie turns the Boo's designs into reality. From liaising with contractors and 
+              suppliers, to looking out for clients, to project management, he's the person to look for.</p>
+          </div>
+        </div>
+      </div>
     </section>
-
+    
+    
+    
     <section class="contact" id="contact">
       <h2>Contact Us</h2>
       <p>Have a project in mind? Get in touch with our team to discuss your requirements at</p>
